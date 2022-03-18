@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1em;
+}
+
+.box {
+  padding: 2em;
+}
+
+#sedans {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: hsl(31, 77%, 52%);
+}
+
+#sedans a {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedans a:hover {
+  background: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+#suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+#suvs a {
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs a:hover {
+  background: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+#luxury {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: hsl(179, 100%, 13%);
+}
+
+#luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury a:hover {
+  background: hsl(179, 100%, 13%);
+  color:hsl(0, 0%, 95%);
+}
+
+#container h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.7em;
+  padding: 1em 0em;
+}
+
+#container p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 2em;
+}
+
+#container a {
+  background: hsl(0, 0%, 95%);
+  padding: 1em 2em;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 95%);
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    padding: 3em;
+  }
+
+  #container p {
+    margin-bottom: 5em;
+  }
+
+  #container {
+    flex-direction: row;
+    max-width: 950px;
+  }
+
+  #sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  #luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
